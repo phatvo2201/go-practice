@@ -1,14 +1,7 @@
 package main
 
-import (
-	"log"
-	"net"
-)
+import "github.com/phatvo2201/pkg/tcp_helper"
 
 func main() {
-	_, err := net.Dial("tcp", "scanme.nmap.org:80")
-	if err != nil {
-		log.Println("fail to connect")
-	}
-	log.Println("connect success !")
+	tcp_helper.TcpScan()
 }
