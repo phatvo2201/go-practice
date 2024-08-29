@@ -1,7 +1,12 @@
 package main
 
-import "github.com/phatvo2201/pkg/tcp_helper"
+import (
+	"time"
+
+	"github.com/phatvo2201/pkg/tcp_helper"
+)
 
 func main() {
-	tcp_helper.TcpScan()
+	tcp_helper.ScanWithGo()
+	time.Sleep(1 * time.Second)
 }
